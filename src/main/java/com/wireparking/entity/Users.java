@@ -12,10 +12,10 @@ public class Users {
     @Column(name = "id")
     private int id;
 
-    @Column(name = "firstName")
+    @Column(name = "fname")
     private String firstName;
 
-    @Column(name = "lastName")
+    @Column(name = "lname")
     private String lastName;
 
     public Users(){
