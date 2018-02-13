@@ -1,12 +1,13 @@
-package com.wireparking.repository;
+package dao.repository;
 
-import com.wireparking.entity.Users;
+import domainn.Users;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
 
+@Repository
 public interface UsersRepository  extends JpaRepository<Users,Integer>{
-   // Users findByfirstName(String name);
     Optional<List<Users>> findByfirstName(String name);
 }
