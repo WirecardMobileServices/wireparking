@@ -14,7 +14,7 @@ public class User {
     @Id
     @Column(name = "ID")
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+    private int id;
 
     @NotNull
     @Enumerated(EnumType.STRING)
@@ -196,4 +196,5 @@ public class User {
                 ", status=" + status +
                 '}';
     }
+
 }
